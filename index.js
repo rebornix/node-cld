@@ -64,13 +64,8 @@ module.exports = {
       options.languageHint,
       options.encodingHint,
       options.tldHint,
-      options.httpHint
+      options.httpHint,
+      cb
     );
-
-    if (result.languages.length < 1) {
-      return cb({message:'Failed to identify language'});
-    }
-
-    return cb(null, result);
   }
 };

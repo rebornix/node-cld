@@ -18,7 +18,8 @@
   },
   "scripts": {
     "test": "node test/runner.js",
-    "postinstall": "node bin/postinstall.js"
+    "postinstall": "node bin/postinstall.js",
+    "start": "node ./example/app.js"
   },
   "author": {
     "name": "Blagovest Dachev",
