@@ -58,6 +58,8 @@ class DetectWorker : public AsyncWorker
     // so it is safe to use V8 again
     void HandleOKCallback()
     {
+      HandleScope scope;
+
       v8::Local<v8::Object> results = Nan::New<v8::Object>();
       unsigned int languageIdx = 0;
       v8::Local<v8::Array> languages = v8::Local<v8::Array>(Nan::New<v8::Array>());
